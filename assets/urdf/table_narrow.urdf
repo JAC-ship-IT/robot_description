@@ -7,13 +7,13 @@
       </material>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size="0.475 0.4 0.3"/>
+        <box size="0.475 0.6 0.35"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size="0.475 0.4 0.3"/>
+        <box size="0.475 0.6 0.35"/>
       </geometry>
     </collision>
     <inertial>
