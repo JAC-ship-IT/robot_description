@@ -1,0 +1,181 @@
+<mujoco model="Marvin M6-S-L-CCS-696-V4.0 urdf">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="Base_L" file="./marvin_meshes/Base_L.STL"/>
+    <mesh name="Link1_L" file="./marvin_meshes/Link1_L.STL"/>
+    <mesh name="Link2_L" file="./marvin_meshes/Link2_L.STL"/>
+    <mesh name="Link3_L" file="./marvin_meshes/Link3_L.STL"/>
+    <mesh name="Link4_L" file="./marvin_meshes/Link4_L.STL"/>
+    <mesh name="Link5_L" file="./marvin_meshes/Link5_L.STL"/>
+    <mesh name="Link6_L" file="./marvin_meshes/Link6_L.STL"/>
+    <mesh name="Link7_L" file="./marvin_meshes/Link7_L.STL"/>
+    <mesh name="left_hand_C_MC" file="left_sharpa_meshes/left_hand_C_MC.STL"/>
+    <mesh name="left_thumb_MC" file="left_sharpa_meshes/left_thumb_MC.STL"/>
+    <mesh name="left_thumb_PP" file="left_sharpa_meshes/left_thumb_PP.STL"/>
+    <mesh name="left_thumb_DP" file="left_sharpa_meshes/left_thumb_DP.STL"/>
+    <mesh name="thumb_elastomer" file="left_sharpa_meshes/thumb_elastomer.STL"/>
+    <mesh name="MCP_VL" file="left_sharpa_meshes/MCP_VL.STL"/>
+    <mesh name="left_PP" file="left_sharpa_meshes/left_PP.STL"/>
+    <mesh name="left_MP" file="left_sharpa_meshes/left_MP.STL"/>
+    <mesh name="left_DP" file="left_sharpa_meshes/left_DP.STL"/>
+    <mesh name="elastomer" file="left_sharpa_meshes/elastomer.STL"/>
+    <mesh name="left_pinky_MC" file="left_sharpa_meshes/left_pinky_MC.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="marvin_base" pos="0 0.6 0">
+      <geom type="mesh" rgba="1 0 0 1" mesh="Base_L"/>
+    <body name="marvin_link_1" pos="0 0 0.1745">
+      <inertial pos="2.347e-05 0.0055715 -0.03076" quat="0.711599 0.0343691 -0.0341702 0.700912" mass="1.9705" diaginertia="0.00529754 0.00492285 0.00184874"/>
+      <joint name="marvin_joint_1" pos="0 0 0" axis="0 0 1" range="-3.1067 3.1067" actuatorfrcrange="-108 108"/>
+      <geom type="mesh" rgba="0 1 0 1" mesh="Link1_L"/>
+      <body name="Link2_L" quat="0.707105 0.707108 0 0">
+        <inertial pos="0.00013483 0.0617046 0.00950639" quat="0.643375 0.765551 -3.57328e-05 0.000294349" mass="2.24398" diaginertia="0.0119493 0.0112156 0.00338374"/>
+        <joint name="marvin_joint_2" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-108 108"/>
+        <geom type="mesh" rgba="0 0 1 1" mesh="Link2_L"/>
+        <body name="marvin_link_3" pos="0 0.287 0" quat="0.707105 -0.707108 0 0">
+          <inertial pos="0.00968562 0.00246599 -0.046273" quat="0.782446 -0.0355285 -0.0735516 0.617337" mass="1.9242" diaginertia="0.00765215 0.00730789 0.0016338"/>
+          <joint name="marvin_joint_3" pos="0 0 0" axis="0 0 1" range="-3.1067 3.1067" actuatorfrcrange="-66 66"/>
+          <geom type="mesh" rgba="1 0 0 1" mesh="Link3_L"/>
+          <body name="marvin_link_4" pos="0.018 0 0" quat="-2.59734e-06 2.59735e-06 -0.707108 0.707105">
+            <inertial pos="0.00850411 -0.0471822 0.00941509" quat="0.741754 0.628694 0.0774999 -0.220317" mass="1.6085" diaginertia="0.00603244 0.00535875 0.00198228"/>
+            <joint name="marvin_joint_4" pos="0 0 0" axis="0 0 1" range="-2.5307 1.0472" actuatorfrcrange="-66 66"/>
+            <geom type="mesh" rgba="0 1 0 1" mesh="Link4_L"/>
+            <body name="marvin_link_5" pos="0.018 -0.314 0" quat="-2.59734e-06 2.59735e-06 -0.707108 0.707105">
+              <inertial pos="0.00051127 0.00101064 -0.112717" quat="0.999438 -0.00995046 -0.00675781 0.0312997" mass="2.0883" diaginertia="0.00626924 0.00564262 0.00243436"/>
+              <joint name="marvin_joint_5" pos="0 0 0" axis="0 0 1" range="-3.1067 3.1067" actuatorfrcrange="-18 18"/>
+              <geom type="mesh" rgba="0 0 1 1" mesh="Link5_L"/>
+              <body name="marvin_link_6" quat="0.499998 0.5 -0.5 0.500002">
+                <inertial pos="0.00032659 0.00531336 -0.00030182" quat="0.718188 -0.0225408 0.00407878 0.695472" mass="0.72496" diaginertia="0.000517351 0.000460362 0.000425057"/>
+                <joint name="marvin_joint_6" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" actuatorfrcrange="-18 18"/>
+                <geom type="mesh" rgba="1 0 0 1" mesh="Link6_L"/>
+                <body name="marvin_link_7" quat="0.499998 0.5 -0.5 0.500002">
+                  <inertial pos="-0.00515436 -0.0861923 -0.00570173" quat="0.635674 0.770873 -0.0190286 -0.0362187" mass="1.45651" diaginertia="0.00679131 0.00619163 0.00147935"/>
+                  <joint name="marvin_joint_7" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-18 18"/>
+                  <geom type="mesh" rgba="0 1 0 1" mesh="Link7_L"/>
+                  <geom pos="1.8366e-07 -0.145 0" quat="0.701057 0.701058 -0.0922945 0.0922971" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_hand_C_MC"/>
+                  <site name="test"  pos="1.8366e-07 -0.145 0" size="0.005"/>
+                  <body name="left_thumb_CMC_VL" pos="0.0163888 -0.1662 -0.0225259" quat="0.560985 0.560984 0.430462 -0.430459">
+                    <inertial pos="0 0 0" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                    <joint name="left_1_thumb_CMC_FE" pos="0 0 0" axis="0 0 1" range="-0.1745 1.9199" actuatorfrcrange="-3.3 3.3"/>
+                    <body name="left_thumb_MC" pos="0 -0.005 0" quat="0.65328 0.653282 -0.270598 0.270599">
+                      <inertial pos="0.0385056 -0.0105846 -0.00991873" quat="0.158428 0.667584 0.222963 0.692474" mass="0.116" diaginertia="3.83518e-05 3.34032e-05 1.641e-05"/>
+                      <joint name="left_thumb_CMC_AA" pos="0 0 0" axis="0 0 1" range="-0.3491 0.1309" actuatorfrcrange="-3.3 3.3"/>
+                      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_thumb_MC"/>
+                      <body name="left_thumb_MCP_VL" pos="0.065 -0.006 -0.010392" quat="0.965926 -0.25882 0 0">
+                        <inertial pos="4.8e-09 0.000869809 -3.6e-09" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                        <joint name="left_thumb_MCP_FE" pos="0 0 0" axis="0 0 1" range="-0.5236 1.3963" actuatorfrcrange="-1.864 1.864"/>
+                        <body name="left_thumb_PP" quat="0.707105 0.707108 0 0">
+                          <inertial pos="0.0219483 -0.00015581 0.00149446" quat="0.526585 0.473016 0.473458 0.524215" mass="0.04955" diaginertia="4.60001e-06 4.35675e-06 2.57733e-06"/>
+                          <joint name="left_thumb_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.3491 0.3491" actuatorfrcrange="-1.864 1.864"/>
+                          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_thumb_PP"/>
+                          <body name="left_thumb_DP" pos="0.039 0 0" quat="0.707105 -0.707108 0 0">
+                            <inertial pos="0.00985785 -0.0101253 0.00044626" quat="-0.279751 0.685265 0.236383 0.629503" mass="0.005987" diaginertia="8.70965e-07 8.13312e-07 2.54546e-07"/>
+                            <joint name="left_thumb_IP" pos="0 0 0" axis="0 0 1" range="0 1.7453" actuatorfrcrange="-0.638 0.638"/>
+                            <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_thumb_DP"/>
+                            <geom quat="0.5 0.5 -0.5 0.5" type="mesh" rgba="0.2 1 0.2 1" mesh="thumb_elastomer"/>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="left_index_MCP_VL" pos="0.00880867 -0.2407 -0.0290087" quat="0.701059 0.0922934 -0.0922957 -0.701056">
+                    <inertial pos="4.8e-09 0.00086981 -3.6e-09" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                    <joint name="left_2_index_MCP_FE" pos="0 0 0" axis="0 0 1" range="-0.174533 1.5708" actuatorfrcrange="-1.864 1.864"/>
+                    <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="MCP_VL"/>
+                    <body name="left_index_PP" quat="0.707105 0.707108 0 0">
+                      <inertial pos="0.0243772 -1.00263e-06 0.000755901" quat="0.519877 0.479286 0.479204 0.519977" mass="0.04138" diaginertia="6.82371e-06 6.54097e-06 2.16753e-06"/>
+                      <joint name="left_index_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.03491 0.03491" actuatorfrcrange="-1.864 1.864"/>
+                      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_PP"/>
+                      <body name="left_index_MP" pos="0.047 0 0" quat="0.707105 -0.707108 0 0">
+                        <inertial pos="0.015316 -0.00138561 6.27987e-08" quat="-0.0196259 0.706839 0.0195186 0.706832" mass="0.02509" diaginertia="2.28516e-06 2.26758e-06 9.99868e-07"/>
+                        <joint name="left_index_PIP" pos="0 0 0" axis="0 0 1" range="0 1.7453" actuatorfrcrange="-0.638 0.638"/>
+                        <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_MP"/>
+                        <body name="left_index_DP" pos="0.0315 0 0">
+                          <inertial pos="0.0093133 -0.00769378 0.000109999" quat="0.66383 0.285208 -0.640847 0.259423" mass="0.004103" diaginertia="4.20431e-07 3.86779e-07 1.39245e-07"/>
+                          <joint name="left_index_DIP" pos="0 0 0" axis="0 0 1" range="0 1.3963" actuatorfrcrange="-0.189369 0.189369"/>
+                          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_DP"/>
+                          <geom quat="0.5 0.5 -0.5 0.5" type="mesh" rgba="0.2 1 0.2 1" mesh="elastomer"/>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="left_middle_MCP_VL" pos="0.00258873 -0.2437 -0.00965926" quat="0.701059 0.0922934 -0.0922957 -0.701056">
+                    <inertial pos="4.8e-09 0.00086981 -3.6e-09" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                    <joint name="left_3_middle_MCP_FE" pos="0 0 0" axis="0 0 1" range="-0.174533 1.5708" actuatorfrcrange="-1.864 1.864"/>
+                    <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="MCP_VL"/>
+                    <body name="left_middle_PP" quat="0.707105 0.707108 0 0">
+                      <inertial pos="0.0243772 -1.00263e-06 0.000755901" quat="0.519877 0.479286 0.479204 0.519977" mass="0.04138" diaginertia="6.82371e-06 6.54097e-06 2.16753e-06"/>
+                      <joint name="left_middle_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.03491 0.03491" actuatorfrcrange="-1.864 1.864"/>
+                      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_PP"/>
+                      <body name="left_middle_MP" pos="0.047 0 0" quat="0.707105 -0.707108 0 0">
+                        <inertial pos="0.015316 -0.00138561 6.27987e-08" quat="-0.0196259 0.706839 0.0195186 0.706832" mass="0.02509" diaginertia="2.28516e-06 2.26758e-06 9.99868e-07"/>
+                        <joint name="left_middle_PIP" pos="0 0 0" axis="0 0 1" range="0 1.7453" actuatorfrcrange="-0.638 0.638"/>
+                        <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_MP"/>
+                        <body name="left_middle_DP" pos="0.0315 0 0">
+                          <inertial pos="0.0093133 -0.00769378 0.000109999" quat="0.66383 0.285208 -0.640847 0.259423" mass="0.004103" diaginertia="4.20431e-07 3.86779e-07 1.39245e-07"/>
+                          <joint name="left_middle_DIP" pos="0 0 0" axis="0 0 1" range="0 1.3963" actuatorfrcrange="-0.189369 0.189369"/>
+                          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_DP"/>
+                          <geom quat="0.5 0.5 -0.5 0.5" type="mesh" rgba="0.2 1 0.2 1" mesh="elastomer"/>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="left_ring_MCP_VL" pos="-0.00121642 -0.2377 0.0103373" quat="0.701059 0.0922934 -0.0922957 -0.701056">
+                    <inertial pos="4.8e-09 0.00086981 3.6e-09" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                    <joint name="left_4_ring_MCP_FE" pos="0 0 0" axis="0 0 1" range="-0.174533 1.5708" actuatorfrcrange="-1.864 1.864"/>
+                    <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="MCP_VL"/>
+                    <body name="left_ring_PP" quat="0.707105 0.707108 0 0">
+                      <inertial pos="0.0243772 -1.00263e-06 0.000755901" quat="0.519877 0.479286 0.479204 0.519977" mass="0.04138" diaginertia="6.82371e-06 6.54097e-06 2.16753e-06"/>
+                      <joint name="left_ring_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.03491 0.03491" actuatorfrcrange="-1.864 1.864"/>
+                      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_PP"/>
+                      <body name="left_ring_MP" pos="0.047 0 0" quat="0.707105 -0.707108 0 0">
+                        <inertial pos="0.015316 -0.00138561 6.27987e-08" quat="-0.0196259 0.706839 0.0195186 0.706832" mass="0.02509" diaginertia="2.28516e-06 2.26758e-06 9.99868e-07"/>
+                        <joint name="left_ring_PIP" pos="0 0 0" axis="0 0 1" range="0 1.7453" actuatorfrcrange="-0.638 0.638"/>
+                        <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_MP"/>
+                        <body name="left_ring_DP" pos="0.0315 0 0">
+                          <inertial pos="0.0093133 -0.00769378 0.00011" quat="0.66383 0.285208 -0.640847 0.259423" mass="0.004103" diaginertia="4.20431e-07 3.86779e-07 1.39245e-07"/>
+                          <joint name="left_ring_DIP" pos="0 0 0" axis="0 0 1" range="0 1.3963" actuatorfrcrange="-0.189369 0.189369"/>
+                          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_DP"/>
+                          <geom quat="0.499998 0.5 -0.5 0.500002" type="mesh" rgba="0.2 1 0.2 1" mesh="elastomer"/>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="left_pinky_MC" pos="0.00416649 -0.2317 0.028344" quat="-0.0922968 0.0923 -0.701054 -0.70106">
+                    <inertial pos="0.0107985 0.00598801 0.0335125" quat="0.709657 0.106152 0.0812795 0.691746" mass="0.12541" diaginertia="3.57685e-05 2.46485e-05 2.14424e-05"/>
+                    <joint name="left_5_pinky_CMC" pos="0 0 0" axis="0 0 1" range="0 0.2618" actuatorfrcrange="-0.5285 0.5285"/>
+                    <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_pinky_MC"/>
+                    <body name="left_pinky_MCP_VL" pos="0.00836 0.0048 0" quat="0.499998 -0.5 0.5 0.500002">
+                      <inertial pos="4.8e-09 0.00086981 -3.6e-09" mass="1e-06" diaginertia="2e-12 2e-12 2e-12"/>
+                      <joint name="left_pinky_MCP_FE" pos="0 0 0" axis="0 0 1" range="-0.174533 1.5708" actuatorfrcrange="-1.864 1.864"/>
+                      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="MCP_VL"/>
+                      <body name="left_pinky_PP" quat="0.707105 0.707108 0 0">
+                        <inertial pos="0.0243772 -1.00263e-06 0.000755901" quat="0.519877 0.479286 0.479204 0.519977" mass="0.04138" diaginertia="6.82371e-06 6.54097e-06 2.16753e-06"/>
+                        <joint name="left_pinky_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.03491 0.03491" actuatorfrcrange="-1.864 1.864"/>
+                        <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_PP"/>
+                        <body name="left_pinky_MP" pos="0.047 0 0" quat="0.707105 -0.707108 0 0">
+                          <inertial pos="0.015316 -0.00138561 6.27987e-08" quat="-0.0196259 0.706839 0.0195186 0.706832" mass="0.02509" diaginertia="2.28516e-06 2.26758e-06 9.99868e-07"/>
+                          <joint name="left_pinky_PIP" pos="0 0 0" axis="0 0 1" range="0 1.7453" actuatorfrcrange="-0.638 0.638"/>
+                          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_MP"/>
+                          <body name="left_pinky_DP" pos="0.0315 0 0">
+                            <inertial pos="0.0093133 -0.00769378 0.000109999" quat="0.66383 0.285208 -0.640847 0.259423" mass="0.004103" diaginertia="4.20431e-07 3.86779e-07 1.39245e-07"/>
+                            <joint name="left_pinky_DIP" pos="0 0 0" axis="0 0 1" range="0 1.3963" actuatorfrcrange="-0.189369 0.189369"/>
+                            <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="left_DP"/>
+                            <geom quat="0.5 0.5 -0.5 0.5" type="mesh" rgba="0.2 1 0.2 1" mesh="elastomer"/>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    </body>
+  </worldbody>
+</mujoco>

@@ -37,27 +37,27 @@
     <geom type="mesh" rgba="0.4 0.4 0.4 1" mesh="base_link"/>
     <body name="Link1" pos="0 0 0.147">
       <inertial pos="-8.7268e-07 -0.0032576 -0.0076748" quat="0.615786 0.347596 -0.347595 0.615761" mass="1.6123" diaginertia="0.00354972 0.0029122 0.00255298"/>
-      <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+      <joint name="dobot_joint_1" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
       <geom type="mesh" rgba="0.4 0.4 0.4 1" mesh="Link1"/>
       <body name="Link2" quat="0.499998 0.5 0.5 -0.500002">
         <inertial pos="-0.21351 -1.3842e-06 0.14252" quat="8.38738e-05 0.707093 5.56955e-05 0.707121" mass="5.5186" diaginertia="0.028294 0.027553 0.0085919"/>
-        <joint name="joint2" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+        <joint name="dobot_joint_2" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
         <geom type="mesh" rgba="1 1 1 1" mesh="Link2"/>
         <body name="Link3" pos="-0.427 0 0">
           <inertial pos="-0.15231 -1.4079e-07 0.022693" quat="0 0.714013 0 0.700132" mass="2.8536" diaginertia="0.00955763 0.0092967 0.00325837"/>
-          <joint name="joint3" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+          <joint name="dobot_joint_3" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
           <geom type="mesh" rgba="0.4 0.4 0.4 1" mesh="Link3"/>
           <body name="Link4" pos="-0.357 0 0.141" quat="0.707105 0 0 -0.707108">
             <inertial pos="-3.2386e-07 -0.002077 -0.0015548" quat="0.653428 0.270173 -0.270153 0.653495" mass="0.67058" diaginertia="0.000764755 0.00066939 0.000543135"/>
-            <joint name="joint4" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+            <joint name="dobot_joint_4" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
             <geom type="mesh" rgba="1 1 1 1" mesh="Link4"/>
             <body name="Link5" pos="0 -0.116 0" quat="0.707105 0.707108 0 0">
               <inertial pos="-3.7738e-07 -0.0045777 -0.0012971" quat="0.27195 0.652753 -0.652695 0.271929" mass="0.7269" diaginertia="0.000832194 0.00073069 0.000593666"/>
-              <joint name="joint5" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+              <joint name="dobot_joint_5" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
               <geom type="mesh" rgba="1 1 1 1" mesh="Link5"/>
               <body name="Link6" pos="0 0.1 0" quat="0.707105 -0.707108 0 0">
                 <inertial pos="-0.0763367 0.00248822 -0.0146324" quat="0.0592076 0.730662 0.0270287 0.67963" mass="0.34556" diaginertia="0.00204539 0.00201864 0.000490686"/>
-                <joint name="joint6" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
+                <joint name="dobot_joint_6" pos="0 0 0" axis="0 0 1" range="-6.28 6.28"/>
                 <site name="metacarpals"  pos="0 -0.03 0.18" size="0.005"/>
                 <geom type="mesh" rgba="0.4 0.4 0.4 1" mesh="Link6"/>
                 <geom pos="0 0 0" quat="0.707105 0 0.707108 0" type="mesh" rgba="0.3 0 0.7 1" mesh="hand_base_link"/>
