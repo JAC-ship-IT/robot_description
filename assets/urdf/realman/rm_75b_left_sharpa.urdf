@@ -436,7 +436,7 @@
     name="rm75b_joint_7"
     type="revolute">
     <origin
-      xyz="0 0 0.067"
+      xyz="0 0 0.1728"
       rpy="0 0 0" />
     <parent
       link="Link6" />
@@ -459,7 +459,7 @@
     </inertial>
   </link>
   <joint name="rm75b_joint_ee" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.0"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.05"/>
     <parent link="Link7"/>
     <child link="rm75b_link_ee"/>
     <axis xyz="0 0 0"/>
