@@ -4,6 +4,9 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="linkerhand_L25NS_left.urdf">
+  <material name="silvery">
+    <color rgba="0.6 0.6 0.6 1.0"/>
+  </material>
   <link
     name="left_hand_base_link">
     <inertial>
@@ -29,9 +32,7 @@
           filename="left_l20_meshes/hand_base_link.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -42,6 +43,7 @@
         <mesh
           filename="left_l20_meshes/hand_base_link.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <link
@@ -69,9 +71,7 @@
           filename="left_l20_meshes/thumb_metacarpals_base1.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -82,6 +82,7 @@
         <mesh
           filename="left_l20_meshes/thumb_metacarpals_base1.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -110,13 +111,21 @@
         rpy="0 0 0" />
       <mass
         value="0.00183264554882498" />
-      <inertia
+      <!-- <inertia
         ixx="2.10633266517815E-07"
         ixy="-4.9133152227129E-08"
         ixz="-1.35746007921721E-08"
         iyy="9.83742137915545E-08"
         iyz="4.75450167610941E-08"
         izz="1.80097560989649E-07" />
+    </inertial> -->
+     <inertia
+        ixx="4.043875385429E-06"
+        ixy="1.31113365770736E-07"
+        ixz="-7.54220071752833E-09"
+        iyy="2.42762975209742E-06"
+        iyz="-1.4815076502312E-07"
+        izz="2.08582778122043E-06" />
     </inertial>
     <visual>
       <origin
@@ -126,11 +135,7 @@
         <mesh
           filename="left_l20_meshes/thumb_metacarpals_base2.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -140,6 +145,7 @@
         <mesh
           filename="left_l20_meshes/thumb_metacarpals_base2.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -185,9 +191,7 @@
           filename="left_l20_meshes/thumb_metacarpals.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -198,6 +202,7 @@
         <mesh
           filename="left_l20_meshes/thumb_metacarpals.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -242,11 +247,7 @@
         <mesh
           filename="left_l20_meshes/thumb_proximal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -256,6 +257,7 @@
         <mesh
           filename="left_l20_meshes/thumb_proximal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -301,9 +303,7 @@
           filename="left_l20_meshes/thumb_distal.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -314,6 +314,7 @@
         <mesh
           filename="left_l20_meshes/thumb_distal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -392,9 +393,7 @@
           filename="left_l20_meshes/index_metacarpals.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -405,6 +404,7 @@
         <mesh
           filename="left_l20_meshes/index_metacarpals.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -449,11 +449,7 @@
         <mesh
           filename="left_l20_meshes/index_proximal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -463,6 +459,7 @@
         <mesh
           filename="left_l20_meshes/index_proximal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -507,11 +504,7 @@
         <mesh
           filename="left_l20_meshes/index_middle.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -565,11 +558,7 @@
         <mesh
           filename="left_l20_meshes/index_distal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -579,6 +568,7 @@
         <mesh
           filename="left_l20_meshes/index_distal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -656,11 +646,7 @@
         <mesh
           filename="left_l20_meshes/middle_metacarpals.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -670,6 +656,7 @@
         <mesh
           filename="left_l20_meshes/middle_metacarpals.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -714,11 +701,7 @@
         <mesh
           filename="left_l20_meshes/middle_proximal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -728,6 +711,7 @@
         <mesh
           filename="left_l20_meshes/middle_proximal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -772,11 +756,7 @@
         <mesh
           filename="left_l20_meshes/middle_middle.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -786,6 +766,7 @@
         <mesh
           filename="left_l20_meshes/middle_middle.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -830,11 +811,7 @@
         <mesh
           filename="left_l20_meshes/middle_distal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -844,6 +821,7 @@
         <mesh
           filename="left_l20_meshes/middle_distal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -921,11 +899,7 @@
         <mesh
           filename="left_l20_meshes/ring_metacarpals.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -935,6 +909,7 @@
         <mesh
           filename="left_l20_meshes/ring_metacarpals.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -979,11 +954,7 @@
         <mesh
           filename="left_l20_meshes/ring_proximal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+     <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -993,6 +964,7 @@
         <mesh
           filename="left_l20_meshes/ring_proximal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1037,11 +1009,7 @@
         <mesh
           filename="left_l20_meshes/ring_middle.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -1051,6 +1019,7 @@
         <mesh
           filename="left_l20_meshes/ring_middle.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1095,11 +1064,7 @@
         <mesh
           filename="left_l20_meshes/ring_distal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+     <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -1109,6 +1074,7 @@
         <mesh
           filename="left_l20_meshes/ring_distal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1187,9 +1153,7 @@
           filename="left_l20_meshes/pinky_metacarpals.STL" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
+        name="silvery">
       </material>
     </visual>
     <collision>
@@ -1200,6 +1164,7 @@
         <mesh
           filename="left_l20_meshes/pinky_metacarpals.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1244,11 +1209,7 @@
         <mesh
           filename="left_l20_meshes/pinky_proximal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -1258,6 +1219,7 @@
         <mesh
           filename="left_l20_meshes/pinky_proximal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1302,11 +1264,7 @@
         <mesh
           filename="left_l20_meshes/pinky_middle.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -1316,6 +1274,7 @@
         <mesh
           filename="left_l20_meshes/pinky_middle.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
@@ -1360,11 +1319,7 @@
         <mesh
           filename="left_l20_meshes/pinky_distal.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
+      <material name="silvery"/>
     </visual>
     <collision>
       <origin
@@ -1374,6 +1329,7 @@
         <mesh
           filename="left_l20_meshes/pinky_distal.STL" />
       </geometry>
+      <material name="silvery"/>
     </collision>
   </link>
   <joint
