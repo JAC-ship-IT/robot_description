@@ -1,0 +1,133 @@
+{
+  "height_m": 0.17,
+  "max_diameter_m": 0.02,
+  "mouth_inner_radius_m": 0.0089,
+  "floor_z_m": 0.002,
+  "brim_volume_ml": 37.1644284813998,
+  "wall_m": 0.0011,
+  "spout_m": 0.0,
+  "nominal_capacity_ml": 25,
+  "dimensions_provenance": "Nominal dimensions inferred from owner photographs; capacities are scale hypotheses except clearly visible 1000mL/100mL/25mL markings",
+  "source_photos": [
+    "20261013110545_63_2.jpg",
+    "20261013110546_64_2.jpg",
+    "20261013110552_68_2.jpg",
+    "20261013110549_66_2.jpg",
+    "20261013110550_67_2.jpg"
+  ],
+  "closure": "Separate free rigid closure; nominal seated fit, no thread/seal model",
+  "appearance": "Nominal intrinsic glass absorption and reconstructed schematic print; no logo or exact label authenticity, color calibration or liquid contents claim.",
+  "key": "tube-graduated",
+  "title": "Black-cap graduated glass tube, nominal 25 mL",
+  "bodies": [
+    {
+      "name": "Vessel",
+      "mass_kg": 0.02374045165292445,
+      "center_of_mass_m": [
+        -5.532540678477411e-19,
+        6.720409706503444e-19,
+        0.08430689450112426
+      ],
+      "principal_inertia_kg_m2": [
+        1.8699450935142215e-06,
+        5.918469425217234e-05,
+        5.918469425217235e-05
+      ],
+      "collision_parts": 193,
+      "visual_bounds_m": [
+        [
+          -0.01,
+          -0.01,
+          0.0
+        ],
+        [
+          0.01,
+          0.01,
+          0.17
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "Closure",
+      "mass_kg": 0.012,
+      "center_of_mass_m": [
+        0.0,
+        -1.63281549825566e-19,
+        0.17650000000000016
+      ],
+      "principal_inertia_kg_m2": [
+        4.1419150350316e-07,
+        4.1419150350316015e-07,
+        5.863830070068298e-07
+      ],
+      "collision_parts": 1,
+      "visual_bounds_m": [
+        [
+          -0.0105,
+          -0.010750000000000001,
+          0.171
+        ],
+        [
+          0.0105,
+          0.010750000000000001,
+          0.182
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738"
+}

@@ -1,0 +1,308 @@
+{
+  "dimensions_provenance": "Native CAD metres preserved; source assembly transformed to local Z-up; seating transform is a testable inference",
+  "extraction": [
+    {
+      "node": "NAUO154",
+      "geometry": "\u0418\u0433\u043b\u0430_\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "part": "Shaft",
+      "source_transform": [
+        [
+          -0.9769496918054761,
+          -2.369989418383179e-17,
+          -0.21346966923004576,
+          -1.2892563939094537
+        ],
+        [
+          -2.9932629458612917e-31,
+          1.0,
+          0.0,
+          0.5726895434781903
+        ],
+        [
+          0.21346966923004576,
+          -1.0846320417428939e-16,
+          -0.9769496918054762,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "NAUO155",
+      "geometry": "\u041a\u043e\u0440\u043f\u0443\u0441",
+      "part": "Housing",
+      "source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.2892563939094537
+        ],
+        [
+          0.0,
+          1.0,
+          -1.3469683255920616e-30,
+          0.5829895436763758
+        ],
+        [
+          0.0,
+          -1.3469683255920616e-30,
+          1.0,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "NAUO156",
+      "geometry": "\u041a\u043d\u043e\u043f\u043a\u0430_\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "part": "Plunger",
+      "source_transform": [
+        [
+          0.9738159004649825,
+          -6.053783597131582e-31,
+          0.22733805665038848,
+          -1.2892563939094537
+        ],
+        [
+          2.9932628919579982e-31,
+          1.0,
+          1.3807176171555974e-30,
+          0.6989895403385157
+        ],
+        [
+          -0.22733805665038848,
+          -1.2765165127480979e-30,
+          0.9738159004649826,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "NAUO157",
+      "geometry": "\u042d\u043a\u0441\u0442\u0440\u0430\u043a\u0442\u043e\u0440",
+      "part": "EjectorSleeve",
+      "source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.2892563939094537
+        ],
+        [
+          0.0,
+          1.0,
+          -1.2760941036386113e-30,
+          0.5764895435422653
+        ],
+        [
+          0.0,
+          -1.4178425475455118e-30,
+          1.0,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "NAUO158",
+      "geometry": "\u041a\u043d\u043e\u043f\u043a\u0430 \u044d\u043a\u0441\u0442\u0440\u0430\u043a\u0442\u043e\u0440\u0430",
+      "part": "EjectorButton",
+      "source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.2782806055620304
+        ],
+        [
+          0.0,
+          1.0,
+          -1.2760941036386113e-30,
+          0.6629895418882364
+        ],
+        [
+          0.0,
+          -1.4178425475455118e-30,
+          1.0,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "NAUO159",
+      "geometry": "200ul\u5438\u5934",
+      "part": "Tip200uL",
+      "source_transform": [
+        [
+          0.6213801003596082,
+          2.186676256013557e-15,
+          -0.7835092666185153,
+          -1.2892563939094537
+        ],
+        [
+          -3.49148129772766e-15,
+          0.9999999999999999,
+          2.1874989336644073e-17,
+          0.444245502352714
+        ],
+        [
+          0.783509266618515,
+          2.7220152679427084e-15,
+          0.6213801003596083,
+          -0.11863142251968295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "source_origin_zup_m": [
+    -1.2892563939094537,
+    0.11863142251968295,
+    0.444245502352714
+  ],
+  "pipette_seating_offset_m": [
+    0.0,
+    0.0,
+    0.037
+  ],
+  "source_files": [
+    "pipandsupport.STEP",
+    "pipsupportonly20260924.STEP"
+  ],
+  "actuation": "Six named CAD parts rigidly grouped; plunger/ejector motion and dispensing not qualified",
+  "collision": "Native CAD triangle-clipped axial convex bands with continuous shaft/tip coverage; native rack clustered convex decomposition; CPU-only bounded contact settings",
+  "key": "micropipette-single-rack",
+  "title": "STEP micropipette with single slotted rack",
+  "bodies": [
+    {
+      "name": "Rack",
+      "mass_kg": 0.12,
+      "center_of_mass_m": [
+        0.0003570006990810676,
+        8.892429727018278e-07,
+        0.07058114559244676
+      ],
+      "principal_inertia_kg_m2": [
+        3.867973566111652e-05,
+        0.0003832618233096049,
+        0.000383635975084897
+      ],
+      "collision_parts": 361,
+      "visual_bounds_m": [
+        [
+          -0.03997563198208809,
+          -0.03999999910593033,
+          1.341104505225843e-09
+        ],
+        [
+          0.03997563198208809,
+          0.03999999910593033,
+          0.17110000312328338
+        ]
+      ],
+      "visual_watertight": [
+        false
+      ]
+    },
+    {
+      "name": "Pipette",
+      "mass_kg": 0.09,
+      "center_of_mass_m": [
+        0.0033090363474129517,
+        4.102165756225212e-06,
+        0.22732012030328427
+      ],
+      "principal_inertia_kg_m2": [
+        9.92381048839594e-06,
+        0.00020994419110305978,
+        0.00021539264189045676
+      ],
+      "collision_parts": 91,
+      "visual_bounds_m": [
+        [
+          -0.026522777272837635,
+          -0.011024906909545287,
+          0.03473667482571461
+        ],
+        [
+          0.03298520033840338,
+          0.012072184592710603,
+          0.32002677693166265
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        true
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738",
+  "contact_revision": "minThickness 1um, hull vertex limit 256, max depenetration velocity 0.1m/s; ordinary runtime damping defaults, no added damping",
+  "pipette_reset_transform": [
+    [
+      0.9939368393590176,
+      -0.08955423454141556,
+      0.06379340436681055,
+      -0.01024454366415739
+    ],
+    [
+      0.08929943860984252,
+      0.9959813377591035,
+      0.006839963417552026,
+      -0.0010868411045521498
+    ],
+    [
+      -0.06414958790961356,
+      -0.0011017764236061064,
+      0.9979396857825321,
+      -0.002155020833015442
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "pipette_reset_provenance": "Observed nominal freely supported pose from physics v005; continuous collider revision separately requalified; no fixed joint or gravity compensation"
+}

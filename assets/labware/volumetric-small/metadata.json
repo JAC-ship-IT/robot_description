@@ -1,0 +1,94 @@
+{
+  "height_m": 0.17200000000000001,
+  "max_diameter_m": 0.054,
+  "mouth_inner_radius_m": 0.007300000000000001,
+  "floor_z_m": 0.002,
+  "brim_volume_ml": 93.30593013014759,
+  "wall_m": 0.0012,
+  "spout_m": 0.0,
+  "nominal_capacity_ml": null,
+  "dimensions_provenance": "Nominal dimensions inferred from owner photographs; capacities are scale hypotheses except clearly visible 1000mL/100mL/25mL markings",
+  "source_photos": [
+    "20261013110545_63_2.jpg",
+    "20261013110546_64_2.jpg",
+    "20261013110552_68_2.jpg",
+    "20261013110549_66_2.jpg",
+    "20261013110550_67_2.jpg"
+  ],
+  "closure": "Separate free rigid closure; nominal seated fit, no thread/seal model",
+  "appearance": "Nominal intrinsic glass absorption and reconstructed schematic print; no logo or exact label authenticity, color calibration or liquid contents claim.",
+  "key": "volumetric-small",
+  "title": "Small amber volumetric flask",
+  "bodies": [
+    {
+      "name": "Vessel",
+      "mass_kg": 0.037868156399366526,
+      "center_of_mass_m": [
+        1.3115961821324079e-19,
+        7.869577092794448e-19,
+        0.052588982325844726
+      ],
+      "principal_inertia_kg_m2": [
+        1.2107346328746732e-05,
+        9.923944101951632e-05,
+        9.923944101951637e-05
+      ],
+      "collision_parts": 433,
+      "visual_bounds_m": [
+        [
+          -0.027,
+          -0.027,
+          0.0
+        ],
+        [
+          0.027,
+          0.027,
+          0.17200000000000001
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "Closure",
+      "mass_kg": 0.012,
+      "center_of_mass_m": [
+        0.0,
+        5.1793276042872524e-20,
+        0.1736245297395641
+      ],
+      "principal_inertia_kg_m2": [
+        3.9794635300392625e-07,
+        3.9794635300392636e-07,
+        4.634839326966609e-07
+      ],
+      "collision_parts": 3,
+      "visual_bounds_m": [
+        [
+          -0.01,
+          -0.01,
+          0.164
+        ],
+        [
+          0.01,
+          0.01,
+          0.179
+        ]
+      ],
+      "visual_watertight": [
+        true
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738",
+  "contact_revision": "minThickness 1um, hull vertex limit 256, max depenetration velocity 0.1m/s; ordinary damping defaults"
+}

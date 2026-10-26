@@ -1,0 +1,54 @@
+{
+  "dimensions_provenance": "Nominal photo estimate",
+  "hole_radius_m": 0.0125,
+  "hole_centers_x_m": [
+    -0.1,
+    -0.060000000000000005,
+    -0.020000000000000004,
+    0.01999999999999999,
+    0.06,
+    0.1
+  ],
+  "support_floor_m": 0.016,
+  "source_photos": [
+    "20261013110550_67_2.jpg"
+  ],
+  "key": "wooden-tube-rack",
+  "title": "Six-place wooden test-tube rack",
+  "bodies": [
+    {
+      "name": "Rack",
+      "mass_kg": 0.32,
+      "center_of_mass_m": [
+        6.711573947703267e-18,
+        -4.614207089045996e-19,
+        0.07975657441305241
+      ],
+      "principal_inertia_kg_m2": [
+        0.0013583984450019774,
+        0.003000618515203698,
+        0.004058099965490457
+      ],
+      "collision_parts": 579,
+      "visual_bounds_m": [
+        [
+          -0.128,
+          -0.0365,
+          0.0
+        ],
+        [
+          0.128,
+          0.0365,
+          0.19
+        ]
+      ],
+      "visual_watertight": [
+        true
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738"
+}

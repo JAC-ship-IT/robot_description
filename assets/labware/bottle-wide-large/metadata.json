@@ -1,0 +1,93 @@
+{
+  "height_m": 0.158,
+  "max_diameter_m": 0.078,
+  "mouth_inner_radius_m": 0.0258,
+  "floor_z_m": 0.003,
+  "brim_volume_ml": 556.9739040327306,
+  "wall_m": 0.0022,
+  "spout_m": 0.0,
+  "nominal_capacity_ml": 500,
+  "dimensions_provenance": "Nominal dimensions inferred from owner photographs; capacities are scale hypotheses except clearly visible 1000mL/100mL/25mL markings",
+  "source_photos": [
+    "20261013110545_63_2.jpg",
+    "20261013110546_64_2.jpg",
+    "20261013110552_68_2.jpg",
+    "20261013110549_66_2.jpg",
+    "20261013110550_67_2.jpg"
+  ],
+  "closure": "Separate free rigid closure; nominal seated fit, no thread/seal model",
+  "appearance": "Nominal intrinsic glass absorption and reconstructed schematic print; no logo or exact label authenticity, color calibration or liquid contents claim.",
+  "key": "bottle-wide-large",
+  "title": "Wide-mouth amber bottle, nominal 500 mL",
+  "bodies": [
+    {
+      "name": "Vessel",
+      "mass_kg": 0.19248416764922616,
+      "center_of_mass_m": [
+        -2.8408562589473916e-18,
+        1.54955795942585e-19,
+        0.06467894394869148
+      ],
+      "principal_inertia_kg_m2": [
+        0.00022814486357353696,
+        0.0005407290830260669,
+        0.0005407290830260674
+      ],
+      "collision_parts": 433,
+      "visual_bounds_m": [
+        [
+          -0.039,
+          -0.03914722579807045,
+          0.0
+        ],
+        [
+          0.039,
+          0.039,
+          0.158
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "Closure",
+      "mass_kg": 0.035,
+      "center_of_mass_m": [
+        -1.4607832174504125e-19,
+        -1.4607832174504125e-19,
+        0.15842739319233737
+      ],
+      "principal_inertia_kg_m2": [
+        6.6442682187455234e-06,
+        6.644268218745527e-06,
+        1.2057479577471881e-05
+      ],
+      "collision_parts": 3,
+      "visual_bounds_m": [
+        [
+          -0.029500000000000002,
+          -0.029500000000000002,
+          0.15
+        ],
+        [
+          0.029500000000000002,
+          0.029500000000000002,
+          0.165
+        ]
+      ],
+      "visual_watertight": [
+        true
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738"
+}

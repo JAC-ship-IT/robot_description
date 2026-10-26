@@ -1,0 +1,63 @@
+{
+  "height_m": 0.139,
+  "max_diameter_m": 0.114,
+  "mouth_inner_radius_m": 0.055,
+  "floor_z_m": 0.003,
+  "brim_volume_ml": 1201.238216582515,
+  "wall_m": 0.002,
+  "spout_m": 0.008,
+  "nominal_capacity_ml": 1000,
+  "dimensions_provenance": "Nominal dimensions inferred from owner photographs; capacities are scale hypotheses except clearly visible 1000mL/100mL/25mL markings",
+  "source_photos": [
+    "20261013110545_63_2.jpg",
+    "20261013110546_64_2.jpg",
+    "20261013110552_68_2.jpg",
+    "20261013110549_66_2.jpg",
+    "20261013110550_67_2.jpg"
+  ],
+  "closure": null,
+  "appearance": "Nominal intrinsic glass absorption and reconstructed schematic print; no logo or exact label authenticity, color calibration or liquid contents claim.",
+  "key": "beaker-1000",
+  "title": "Large beaker, nominal 1000 mL",
+  "bodies": [
+    {
+      "name": "Vessel",
+      "mass_kg": 0.2687602544124278,
+      "center_of_mass_m": [
+        0.0008025588887485678,
+        -9.444125822556075e-18,
+        0.0560333735318692
+      ],
+      "principal_inertia_kg_m2": [
+        0.0006975811292071547,
+        0.0008867808415762545,
+        0.0008992486842229517
+      ],
+      "collision_parts": 241,
+      "visual_bounds_m": [
+        [
+          -0.057,
+          -0.057,
+          0.0
+        ],
+        [
+          0.065,
+          0.057,
+          0.139
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738"
+}

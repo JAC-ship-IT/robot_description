@@ -1,0 +1,3 @@
+mdl 1.7;
+import ::df::*;
+export material LabGlass(color tint=color(1), color absorption=color(0)) = material(thin_walled:false, ior:color(1.47), surface:material_surface(scattering:df::specular_bsdf(tint:tint,mode:df::scatter_reflect_transmit)), volume:material_volume(absorption_coefficient:absorption));

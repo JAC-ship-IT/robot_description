@@ -1,0 +1,63 @@
+{
+  "height_m": 0.159,
+  "max_diameter_m": 0.10400000000000001,
+  "mouth_inner_radius_m": 0.0202,
+  "floor_z_m": 0.0025,
+  "brim_volume_ml": 572.2455314970224,
+  "wall_m": 0.0018000000000000002,
+  "spout_m": 0.0,
+  "nominal_capacity_ml": 500,
+  "dimensions_provenance": "Nominal dimensions inferred from owner photographs; capacities are scale hypotheses except clearly visible 1000mL/100mL/25mL markings",
+  "source_photos": [
+    "20261013110545_63_2.jpg",
+    "20261013110546_64_2.jpg",
+    "20261013110552_68_2.jpg",
+    "20261013110549_66_2.jpg",
+    "20261013110550_67_2.jpg"
+  ],
+  "closure": null,
+  "appearance": "Nominal intrinsic glass absorption and reconstructed schematic print; no logo or exact label authenticity, color calibration or liquid contents claim.",
+  "key": "conical-large",
+  "title": "Large conical flask, nominal 500 mL",
+  "bodies": [
+    {
+      "name": "Vessel",
+      "mass_kg": 0.16749866356394094,
+      "center_of_mass_m": [
+        4.27693338487555e-18,
+        2.376074102708639e-18,
+        0.048528227744947305
+      ],
+      "principal_inertia_kg_m2": [
+        0.00023124258370518005,
+        0.00047979751072097003,
+        0.0004797975107209702
+      ],
+      "collision_parts": 337,
+      "visual_bounds_m": [
+        [
+          -0.052000000000000005,
+          -0.052000000000000005,
+          0.0
+        ],
+        [
+          0.052000000000000005,
+          0.052000000000000005,
+          0.159
+        ]
+      ],
+      "visual_watertight": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "units": "m",
+  "up_axis": "Z",
+  "physical_parameters": "Nominal mass: glass parts use 2230 kg/m3; non-glass parts use fixed estimates listed per body. Friction 0.5/0.4. COM/inertia approximated from convex compound, including possible hull overlap; no measured dynamics.",
+  "source_code_sha256": "3f99660b7aacb9279ef05f568ce929397cb892ef4e319963a1b318117fecb738"
+}
