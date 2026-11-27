@@ -1,0 +1,232 @@
+<mujoco model="yimu_v2_left">
+  <compiler angle="radian"/>
+
+  <size nkey="1"/>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="meshes/base_link.STL"/>
+    <mesh name="1-1" content_type="model/stl" file="meshes/1-1.STL"/>
+    <mesh name="1-2" content_type="model/stl" file="meshes/1-2.STL"/>
+    <mesh name="1-3" content_type="model/stl" file="meshes/1-3.STL"/>
+    <mesh name="1-4" content_type="model/stl" file="meshes/1-4.STL"/>
+    <mesh name="1-5" content_type="model/stl" file="meshes/1-5.STL"/>
+    <mesh name="2-1" content_type="model/stl" file="meshes/2-1.STL"/>
+    <mesh name="2-2" content_type="model/stl" file="meshes/2-2.STL"/>
+    <mesh name="2-3" content_type="model/stl" file="meshes/2-3.STL"/>
+    <mesh name="2-4" content_type="model/stl" file="meshes/2-4.STL"/>
+    <mesh name="3-1" content_type="model/stl" file="meshes/3-1.STL"/>
+    <mesh name="3-2" content_type="model/stl" file="meshes/3-2.STL"/>
+    <mesh name="3-3" content_type="model/stl" file="meshes/3-3.STL"/>
+    <mesh name="3-4" content_type="model/stl" file="meshes/3-4.STL"/>
+    <mesh name="4-1" content_type="model/stl" file="meshes/4-1.STL"/>
+    <mesh name="4-2" content_type="model/stl" file="meshes/4-2.STL"/>
+    <mesh name="4-3" content_type="model/stl" file="meshes/4-3.STL"/>
+    <mesh name="4-4" content_type="model/stl" file="meshes/4-4.STL"/>
+    <mesh name="5-1" content_type="model/stl" file="meshes/5-1.STL"/>
+    <mesh name="5-2" content_type="model/stl" file="meshes/5-2.STL"/>
+    <mesh name="5-3" content_type="model/stl" file="meshes/5-3.STL"/>
+    <mesh name="5-4" content_type="model/stl" file="meshes/5-4.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="yimu_v2_palm">
+      <inertial pos="-0.0183673 0.0118446 -0.0452267" quat="0.696382 0.00994733 -0.00604037 0.717577" mass="0.189791" diaginertia="0.000211536 0.000141703 9.64831e-05"/>
+      <geom size="0.0573976 0.0363015 0.0187302" pos="-0.0186839 0.0138211 -0.0397601" quat="-0.435029 0.500756 0.527198 0.531089" type="box" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="base_link"/>
+      <body name="1-1" pos="-0.015083 0.0097077 -0.0789682" quat="0.353553 0.353553 0.612372 -0.612372">
+        <inertial pos="0.000552257 -0.025555 0.000563437" quat="0.636677 0.667799 -0.306507 0.233965" mass="0.028766" diaginertia="2.89175e-06 2.30226e-06 1.94998e-06"/>
+        <joint name="1-1" pos="0 0 0" axis="0 1 0" range="-0.7854 0.7854" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="1-1"/>
+        <geom size="0.00968802 0.0108869" pos="0.00021287 -0.0213011 0.000610518" quat="0.737303 0.673918 0.047105 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+        <body name="1-2" pos="-0.000777817 -0.0358 0.00770746" quat="0.270598 0.653281 -0.653281 -0.270598">
+          <inertial pos="0.00638604 -0.00575824 0.00548257" quat="0.416591 0.419524 -0.642436 0.487572" mass="0.0286709" diaginertia="2.69643e-06 2.20727e-06 1.62367e-06"/>
+          <joint name="1-2" pos="0 0 0" axis="0 -1 0" range="-1.6581 0" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="1-2"/>
+          <geom size="0.0148675 0.001" pos="0.00743756 -0.00341982 0.00316188" quat="0.704633 0.499423 0.504052 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+          <body name="1-3" pos="0.0186 -0.006 0.01095" quat="0.707107 -0.707107 0 0">
+            <inertial pos="0.020911 0.0059531 -0.00167907" quat="-0.00467751 0.697104 -0.00500965 0.716937" mass="0.0457126" diaginertia="8.34945e-06 7.87125e-06 2.92222e-06"/>
+            <joint name="1-3" pos="0 0 0" axis="0 -1 0" range="-0.3491 1.3963" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="1-3"/>
+            <geom size="0.0120935 0.0151733" pos="0.0191952 0.00598577 -0.000315345" quat="0.664338 -0.0132288 -0.747315 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+            <body name="1-4" pos="0.0399162 0 0.00509861" quat="0 1 0 0">
+              <inertial pos="0.0199829 -0.00601046 0.00664573" quat="0.581816 0.40201 0.402481 0.58128" mass="0.0349601" diaginertia="5.25048e-06 4.35659e-06 1.89397e-06"/>
+              <joint name="1-4" pos="0 0 0" axis="0 1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="1-4"/>
+              <geom size="0.0105548 0.0139991" pos="0.019951 -0.0058636 0.00552037" quat="0.639052 0.0107505 -0.769088 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+              <body name="1-5" pos="0.0365518 0 0.00497442">
+                <inertial pos="0.0138019 -0.006003 0.00492234" quat="0.0178354 0.592283 -0.00201903 0.80553" mass="0.0271809" diaginertia="1.05792e-06 9.53091e-07 7.51976e-07"/>
+                <joint name="1-5" pos="0 0 0" axis="0 1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="1-5"/>
+                <geom type="mesh" group="3" priority="1" solimp="0.5 0.95 0.002" mesh="1-5"/>
+                <site name="1-5_fingertip" pos="0.0365082 -0.00572799 0.00528034" size="0.003" group="5" rgba="1 0 0 1"/>
+                <site name="1-5_pad" pos="0.0247333 -0.006037 -0.0023577" size="0.002" group="4" rgba="0.1 0.9 0.4 0.8"/>
+                <site name="1-5_pad_zone" pos="0.0238692 -0.00603436 0.00325622" quat="0.736319 0.00463986 0.676619 0" size="0.00700015 0.00593799" group="4" type="capsule" rgba="0.1 0.9 0.4 0.3"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="2-1" pos="-0.05256 0.0154077 0.0116" quat="0 0 1 0">
+        <inertial pos="2.39739e-08 -0.00586764 -0.00963279" quat="0.689797 -0.155499 0.155499 0.689797" mass="0.0226396" diaginertia="1.32266e-06 8.93349e-07 6.59317e-07"/>
+        <joint name="2-1" pos="0 0 0" axis="0 1 0" range="-0.31416 0.31416" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="2-1"/>
+        <geom size="0.00805585 0.0128969" pos="0.000609844 -0.00671139 0.00112602" quat="0.999752 0.0198255 0.0101079 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+        <body name="2-2" pos="-0.006 -0.0036 -0.0118" quat="0.5 0.5 0.5 -0.5">
+          <inertial pos="0.0223426 0.00599186 -0.000422508" quat="0.0969909 0.710179 0.0996289 0.690154" mass="0.0343366" diaginertia="6.03282e-06 6.01649e-06 8.5947e-07"/>
+          <joint name="2-2" pos="0 0 0" axis="0 -1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="2-2"/>
+          <geom size="0.0102511 0.0167467" pos="0.0207715 0.00608853 0.000591291" quat="0.727413 0.0021273 -0.686197 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+          <body name="2-3" pos="0.0422 5e-05 0.0034" quat="0 1 0 0">
+            <inertial pos="0.0174975 -0.00599547 0.00614317" quat="0.56144 0.430775 0.425639 0.563958" mass="0.0286606" diaginertia="2.81877e-06 2.43072e-06 8.83581e-07"/>
+            <joint name="2-3" pos="0 0 0" axis="0 1 0" range="0 2.0595" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="2-3"/>
+            <geom size="0.00877897 0.0106935" pos="0.0156568 -0.00594517 0.004454" quat="0.641285 0.000373818 -0.767303 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+            <body name="2-4" pos="0.0275193 -0.00454994 0.0089409" quat="1 6.18923e-06 0 0">
+              <inertial pos="0.012105 -0.00145992 -0.00187351" quat="0.475433 0.492298 -0.50747 0.523527" mass="0.00580039" diaginertia="2.46432e-07 1.73958e-07 1.68935e-07"/>
+              <joint name="2-4" pos="0 0 0" axis="0 1 0" range="0 1.103" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="2-4"/>
+              <geom type="mesh" group="3" priority="1" solimp="0.5 0.95 0.002" mesh="2-4"/>
+              <site name="2-4_fingertip" pos="0.0326573 -0.00139674 -0.00107883" size="0.003" group="5" rgba="1 0 0 1"/>
+              <site name="2-4_pad" pos="0.0215236 -0.0014632 -0.00898887" size="0.002" group="4" rgba="0.1 0.9 0.4 0.8"/>
+              <site name="2-4_pad_zone" pos="0.0207315 -0.0014632 -0.00368528" quat="0.741592 0 0.670851 0" size="0.00661647 0.00507189" group="4" type="capsule" rgba="0.1 0.9 0.4 0.3"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="3-1" pos="-0.03156 0.0154077 0.0156" quat="0 0 1 0">
+        <inertial pos="2.39739e-08 -0.00586764 -0.00963279" quat="0.689797 -0.155499 0.155499 0.689797" mass="0.0226396" diaginertia="1.32266e-06 8.93349e-07 6.59317e-07"/>
+        <joint name="3-1" pos="0 0 0" axis="0 1 0" range="-0.31416 0.31416" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="3-1"/>
+        <geom size="0.00805585 0.0128969" pos="0.000609844 -0.00671139 0.00112602" quat="0.999752 0.0198255 0.0101079 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+        <body name="3-2" pos="-0.006 -0.0036 -0.0118" quat="0.5 0.5 0.5 -0.5">
+          <inertial pos="0.0223426 0.00599186 -0.000422507" quat="0.0969914 0.710179 0.0996294 0.690154" mass="0.0343366" diaginertia="6.03282e-06 6.01649e-06 8.5947e-07"/>
+          <joint name="3-2" pos="0 0 0" axis="0 -1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="3-2"/>
+          <geom size="0.0102511 0.0167467" pos="0.0207715 0.00608853 0.000591291" quat="0.727413 0.0021273 -0.686197 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+          <body name="3-3" pos="0.0422 5e-05 0.0034" quat="0 1 0 0">
+            <inertial pos="0.0174975 -0.00599547 0.00614317" quat="0.56144 0.430775 0.425639 0.563958" mass="0.0286606" diaginertia="2.81877e-06 2.43072e-06 8.83581e-07"/>
+            <joint name="3-3" pos="0 0 0" axis="0 1 0" range="0 2.0595" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="3-3"/>
+            <geom size="0.00877897 0.0106935" pos="0.0156568 -0.00594517 0.004454" quat="0.641285 0.000373818 -0.767303 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+            <body name="3-4" pos="0.0275193 -0.00454994 0.0089409" quat="1 6.18923e-06 0 0">
+              <inertial pos="0.012105 -0.00145992 -0.0018735" quat="0.475435 0.492296 -0.507471 0.523525" mass="0.00580039" diaginertia="2.46432e-07 1.73958e-07 1.68935e-07"/>
+              <joint name="3-4" pos="0 0 0" axis="0 1 0" range="0 1.103" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="3-4"/>
+              <geom type="mesh" group="3" priority="1" solimp="0.5 0.95 0.002" mesh="3-4"/>
+              <site name="3-4_fingertip" pos="0.0326573 -0.00139674 -0.00107883" size="0.003" group="5" rgba="1 0 0 1"/>
+              <site name="3-4_pad" pos="0.0215236 -0.0014632 -0.00898887" size="0.002" group="4" rgba="0.1 0.9 0.4 0.8"/>
+              <site name="3-4_pad_zone" pos="0.0207315 -0.0014632 -0.00368528" quat="0.741592 0 0.670851 0" size="0.00661647 0.00507189" group="4" type="capsule" rgba="0.1 0.9 0.4 0.3"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="4-1" pos="-0.01056 0.0154077 0.0106013" quat="0 0 1 0">
+        <inertial pos="2.39739e-08 -0.00586764 -0.00963279" quat="0.689797 -0.155499 0.155499 0.689797" mass="0.0226396" diaginertia="1.32266e-06 8.93349e-07 6.59317e-07"/>
+        <joint name="4-1" pos="0 0 0" axis="0 1 0" range="-0.31416 0.31416" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="4-1"/>
+        <geom size="0.00805585 0.0128969" pos="0.000609844 -0.00671139 0.00112602" quat="0.999752 0.0198255 0.0101079 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+        <body name="4-2" pos="-0.006 -0.0036 -0.0118" quat="0.5 0.5 0.5 -0.5">
+          <inertial pos="0.0223426 0.00599186 -0.000422507" quat="0.0969914 0.710179 0.0996293 0.690154" mass="0.0343366" diaginertia="6.03282e-06 6.01649e-06 8.5947e-07"/>
+          <joint name="4-2" pos="0 0 0" axis="0 -1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="4-2"/>
+          <geom size="0.0102511 0.0167467" pos="0.0207715 0.00608853 0.000591291" quat="0.727413 0.0021273 -0.686197 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+          <body name="4-3" pos="0.0422 5e-05 0.0034" quat="0 1 0 0">
+            <inertial pos="0.0174975 -0.00599547 0.00614317" quat="0.56144 0.430775 0.425639 0.563958" mass="0.0286606" diaginertia="2.81877e-06 2.43072e-06 8.83581e-07"/>
+            <joint name="4-3" pos="0 0 0" axis="0 1 0" range="0 2.0595" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="4-3"/>
+            <geom size="0.00877897 0.0106935" pos="0.0156568 -0.00594517 0.004454" quat="0.641285 0.000373818 -0.767303 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+            <body name="4-4" pos="0.0275193 -0.00454994 0.0089409" quat="1 6.18923e-06 0 0">
+              <inertial pos="0.012105 -0.00145992 -0.0018735" quat="0.475435 0.492296 -0.507472 0.523525" mass="0.00580039" diaginertia="2.46432e-07 1.73958e-07 1.68935e-07"/>
+              <joint name="4-4" pos="0 0 0" axis="0 1 0" range="0 1.103" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="4-4"/>
+              <geom type="mesh" group="3" priority="1" solimp="0.5 0.95 0.002" mesh="4-4"/>
+              <site name="4-4_fingertip" pos="0.0326573 -0.00139674 -0.00107883" size="0.003" group="5" rgba="1 0 0 1"/>
+              <site name="4-4_pad" pos="0.0215236 -0.0014632 -0.00898887" size="0.002" group="4" rgba="0.1 0.9 0.4 0.8"/>
+              <site name="4-4_pad_zone" pos="0.0207315 -0.0014632 -0.00368528" quat="0.741592 0 0.670851 0" size="0.00661647 0.00507189" group="4" type="capsule" rgba="0.1 0.9 0.4 0.3"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="5-1" pos="0.01044 0.0154077 0.00360127" quat="0 0 1 0">
+        <inertial pos="2.40282e-08 -0.00586764 -0.00963279" quat="0.689797 -0.155499 0.155499 0.689797" mass="0.0226396" diaginertia="1.32266e-06 8.93349e-07 6.59317e-07"/>
+        <joint name="5-1" pos="0 0 0" axis="0 1 0" range="-0.31416 0.31416" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="5-1"/>
+        <geom size="0.00805585 0.0128969" pos="0.000609844 -0.00671139 0.00112602" quat="0.999752 0.0198255 0.0101079 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+        <body name="5-2" pos="-0.006 -0.0036 -0.0118" quat="0.5 0.5 0.5 -0.5">
+          <inertial pos="0.0223426 0.00599186 -0.000422508" quat="0.0969911 0.710179 0.0996291 0.690154" mass="0.0343366" diaginertia="6.03282e-06 6.01649e-06 8.5947e-07"/>
+          <joint name="5-2" pos="0 0 0" axis="0 -1 0" range="0 1.5708" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="5-2"/>
+          <geom size="0.0102511 0.0167467" pos="0.0207715 0.00608853 0.000591291" quat="0.727413 0.0021273 -0.686197 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+          <body name="5-3" pos="0.0422 5e-05 0.0034" quat="0 1 0 0">
+            <inertial pos="0.0174975 -0.00599547 0.00614317" quat="0.56144 0.430775 0.425639 0.563958" mass="0.0286606" diaginertia="2.81877e-06 2.43072e-06 8.83581e-07"/>
+            <joint name="5-3" pos="0 0 0" axis="0 1 0" range="0 2.0595" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="5-3"/>
+            <geom size="0.00877897 0.0106935" pos="0.0156568 -0.00594517 0.004454" quat="0.641285 0.000373818 -0.767303 0" type="capsule" group="3" solref="0.005" solimp="0.5 0.99 0.0001"/>
+            <body name="5-4" pos="0.027519 -0.0045499 0.0089409" quat="1 6.189e-06 0 0">
+              <inertial pos="0.0127955 -0.00145425 -0.00171403" quat="0.0130937 0.688326 -0.0137942 0.725152" mass="0.00496978" diaginertia="2.36263e-07 1.58974e-07 1.54907e-07"/>
+              <joint name="5-4" pos="0 0 0" axis="0 1 0" range="0 1.103" armature="0.0002" damping="0.05" frictionloss="0.01"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.894118 0.894118 0.894118 1" mesh="5-4"/>
+              <geom type="mesh" group="3" priority="1" solimp="0.5 0.95 0.002" mesh="5-4"/>
+              <site name="5-4_fingertip" pos="0.0326555 -0.0013744 -0.000943765" size="0.003" group="5" rgba="1 0 0 1"/>
+              <site name="5-4_pad" pos="0.0222503 -0.00146582 -0.00905769" size="0.002" group="4" rgba="0.1 0.9 0.4 0.8"/>
+              <site name="5-4_pad_zone" pos="0.0214114 -0.00146582 -0.0036483" quat="0.744118 0 0.668048 0" size="0.00675485 0.00512472" group="4" type="capsule" rgba="0.1 0.9 0.4 0.3"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="yimu_v2_palm" body2="1-1"/>
+    <exclude body1="yimu_v2_palm" body2="1-2"/>
+    <exclude body1="yimu_v2_palm" body2="1-3"/>
+    <exclude body1="yimu_v2_palm" body2="2-1"/>
+    <exclude body1="yimu_v2_palm" body2="2-2"/>
+    <exclude body1="yimu_v2_palm" body2="3-1"/>
+    <exclude body1="yimu_v2_palm" body2="3-2"/>
+    <exclude body1="yimu_v2_palm" body2="4-1"/>
+    <exclude body1="yimu_v2_palm" body2="4-2"/>
+    <exclude body1="yimu_v2_palm" body2="5-1"/>
+    <exclude body1="yimu_v2_palm" body2="5-2"/>
+  </contact>
+
+  <equality>
+    <joint name="2-4_follows_2-3" joint1="2-4" joint2="2-3" polycoef="0 0.97718 -0.262697 0.0772788 -0.0260119" solref="0.01" solimp="0.9999 0.9999 1e-06"/>
+    <joint name="3-4_follows_3-3" joint1="3-4" joint2="3-3" polycoef="0 0.97718 -0.262697 0.0772788 -0.0260119" solref="0.01" solimp="0.9999 0.9999 1e-06"/>
+    <joint name="4-4_follows_4-3" joint1="4-4" joint2="4-3" polycoef="0 0.97718 -0.262697 0.0772788 -0.0260119" solref="0.01" solimp="0.9999 0.9999 1e-06"/>
+    <joint name="5-4_follows_5-3" joint1="5-4" joint2="5-3" polycoef="0 0.97718 -0.262697 0.0772788 -0.0260119" solref="0.01" solimp="0.9999 0.9999 1e-06"/>
+  </equality>
+
+  <actuator>
+    <general name="1-1_act" joint="1-1" ctrlrange="-0.7854 0.7854" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="1-2_act" joint="1-2" ctrlrange="-1.6581 0" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="1-3_act" joint="1-3" ctrlrange="-0.3491 1.3963" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="1-4_act" joint="1-4" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="1-5_act" joint="1-5" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="2-1_act" joint="2-1" ctrlrange="-0.31416 0.31416" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="2-2_act" joint="2-2" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="2-3_act" joint="2-3" ctrlrange="0 2.0595" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="3-1_act" joint="3-1" ctrlrange="-0.31416 0.31416" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="3-2_act" joint="3-2" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="3-3_act" joint="3-3" ctrlrange="0 2.0595" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="4-1_act" joint="4-1" ctrlrange="-0.31416 0.31416" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="4-2_act" joint="4-2" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="4-3_act" joint="4-3" ctrlrange="0 2.0595" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="5-1_act" joint="5-1" ctrlrange="-0.31416 0.31416" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="5-2_act" joint="5-2" ctrlrange="0 1.5708" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+    <general name="5-3_act" joint="5-3" ctrlrange="0 2.0595" forcerange="-0.16 0.16" biastype="affine" gainprm="2" biasprm="0 -2"/>
+  </actuator>
+
+  <sensor>
+    <touch site="1-5_pad_zone" name="1-5_pad_touch"/>
+    <touch site="2-4_pad_zone" name="2-4_pad_touch"/>
+    <touch site="3-4_pad_zone" name="3-4_pad_touch"/>
+    <touch site="4-4_pad_zone" name="4-4_pad_touch"/>
+    <touch site="5-4_pad_zone" name="5-4_pad_touch"/>
+  </sensor>
+
+  <keyframe>
+    <key name="open_hand" qpos="0 0 0 0.698132 0 0 0.523599 0.610865 0.512892 0 0.523599 0.610865 0.512892 0 0.523599 0.610865 0.512892 0 0.523599 0.610865 0.512892" ctrl="0 0 0 0.698132 0 0 0.523599 0.610865 0 0.523599 0.610865 0 0.523599 0.610865 0 0.523599 0.610865"/>
+  </keyframe>
+</mujoco>

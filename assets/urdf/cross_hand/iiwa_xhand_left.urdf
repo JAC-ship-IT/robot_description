@@ -2034,6 +2034,37 @@
       friction="0" />
   </joint>
 
+    <link name='thumb_tip'/>
+  <joint name="thumb_tip_joint" type="fixed">
+    <origin xyz="0.044 0 -0.008" rpy="0 0 0"/>
+    <parent link="left_hand_thumb_rota_link2"/>
+    <child link="thumb_tip"/>
+  </joint>
+  <link name='index_tip'/>
+  <joint name="index_tip_joint" type="fixed">
+    <origin xyz="0 -0.005 -0.04" rpy="0 0 0"/>
+    <parent link="left_hand_index_rota_link2"/>
+    <child link="index_tip"/>
+  </joint>
+  <link name='middle_tip'/>
+  <joint name="middle_tip_joint" type="fixed">
+    <origin xyz="0 -0.005 -0.04" rpy="0 0 0"/>
+    <parent link="left_hand_mid_link2"/>
+    <child link="middle_tip"/>
+  </joint>
+  <link name='ring_tip'/>
+  <joint name="ring_tip_joint" type="fixed">
+    <origin xyz="0 -0.005 -0.04" rpy="0 0 0"/>
+    <parent link="left_hand_ring_link2"/>
+    <child link="ring_tip"/>
+  </joint>
+  <link name='pinky_tip'/>
+  <joint name="pinky_tip_joint" type="fixed">
+    <origin xyz="0 -0.005 -0.04" rpy="0 0 0"/>
+    <parent link="left_hand_pinkyback_link2"/>
+    <child link="pinky_tip"/>
+  </joint>
+
     <!-- ============================================================================= -->
   <!-- Create a different *root* for the hand -->
   <!-- Note: this offset is just eyeballed... -->

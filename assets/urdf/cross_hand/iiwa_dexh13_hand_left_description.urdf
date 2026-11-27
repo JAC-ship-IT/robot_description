@@ -1865,7 +1865,7 @@
       xyz="0 0 0" />
   </joint>
 
-  <link name='thumb_tip'/>
+  <!-- <link name='thumb_tip'/>
   <joint name="thumb_tip_joint" type="fixed">
     <origin xyz="0.038 -0.012 -0.006" rpy="0 0 0"/>
     <parent link="left_thumb_link_3"/>
@@ -1886,6 +1886,31 @@
   <link name='ring_tip'/>
   <joint name="ring_tip_joint" type="fixed">
     <origin xyz="0.028 -0.012 0.0" rpy="0 0 0"/>
+    <parent link="left_ring_link_3"/>
+    <child link="ring_tip"/>
+  </joint> -->
+
+   <link name='thumb_tip'/>
+  <joint name="thumb_tip_joint" type="fixed">
+    <origin xyz="0.032 -0.002 0.0" rpy="0 0 0"/>
+    <parent link="left_thumb_link_3"/>
+    <child link="thumb_tip"/>
+  </joint>
+  <link name='index_tip'/>
+  <joint name="index_tip_joint" type="fixed">
+    <origin xyz="0.025 -0.003 0.0" rpy="0 0 0"/>
+    <parent link="left_index_link_3"/>
+    <child link="index_tip"/>
+  </joint>
+  <link name='middle_tip'/>
+  <joint name="middle_tip_joint" type="fixed">
+    <origin xyz="0.025 -0.003 0.0" rpy="0 0 0"/>
+    <parent link="left_middle_link_3"/>
+    <child link="middle_tip"/>
+  </joint>
+  <link name='ring_tip'/>
+  <joint name="ring_tip_joint" type="fixed">
+    <origin xyz="0.025 -0.003 0.0" rpy="0 0 0"/>
     <parent link="left_ring_link_3"/>
     <child link="ring_tip"/>
   </joint>

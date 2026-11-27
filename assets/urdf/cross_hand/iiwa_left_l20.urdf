@@ -1676,6 +1676,38 @@
     </inertial>
   </link>
 
+
+  <link name='thumb_tip'/>
+  <joint name="thumb_tip_joint" type="fixed">
+    <origin xyz="0.0 0 0.027" rpy="0 0 0"/>
+    <parent link="left_thumb_distal"/>
+    <child link="thumb_tip"/>
+  </joint>
+  <link name='index_tip'/>
+  <joint name="index_tip_joint" type="fixed">
+    <origin xyz="-0.01 0 0.022" rpy="0 0 0"/>
+    <parent link="left_index_distal"/>
+    <child link="index_tip"/>
+  </joint>
+  <link name='middle_tip'/>
+  <joint name="middle_tip_joint" type="fixed">
+    <origin xyz="-0.01 0 0.022" rpy="0 0 0"/>
+    <parent link="left_middle_distal"/>
+    <child link="middle_tip"/>
+  </joint>
+  <link name='ring_tip'/>
+  <joint name="ring_tip_joint" type="fixed">
+    <origin xyz="-0.01 0 0.022" rpy="0 0 0"/>
+    <parent link="left_ring_distal"/>
+    <child link="ring_tip"/>
+  </joint>
+  <link name='pinky_tip'/>
+  <joint name="pinky_tip_joint" type="fixed">
+    <origin xyz="-0.01 0 0.022" rpy="0 0 0"/>
+    <parent link="left_pinky_distal"/>
+    <child link="pinky_tip"/>
+  </joint>
+
   <!-- ============================================================================= -->
   <!-- Create a different *root* for the hand -->
   <!-- Note: this offset is just eyeballed... -->
